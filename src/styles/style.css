@@ -1,0 +1,443 @@
+/** CSS STYLE **/
+
+:root {
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main-light: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  src: url("../fonts/OpenSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: Neucha;
+  font-weight: 400;
+  src: url("../fonts/Neucha-Regular.ttf");
+}
+
+.main-light {
+  color: var(--main-light);
+}
+
+.dark {
+  color: var(--dark);
+}
+
+.white {
+  color: var(--white);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2a2626;
+  line-height: 1.6em;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Neucha, sans-serif;
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  margin-bottom: 23px;
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.btn {
+  margin-top: 50px;
+}
+
+.btn a {
+  padding: 12px 24px;
+  color: var(--white);
+  background: var(--main-light);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.form-section a {
+  color: var(--white);
+}
+
+.footer a {
+  color: var(--blue);
+}
+
+.btn a:hover {
+  background-color: #ea7600;
+}
+
+.bg-light::before {
+  width: 100%;
+  content: "";
+  position: absolute;
+  height: 100%;
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.bg-light {
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+.bg-dark::before {
+  width: 100%;
+  content: "";
+  position: absolute;
+  height: 100%;
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.bg-dark {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.container {
+  position: relative;
+}
+
+.section-container {
+  width: 1110px;
+  position: relative;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+header img {
+  height: 525px;
+  position: absolute;
+  top: 55px;
+  right: -270px;
+}
+
+header h1 {
+  text-align: left;
+  position: relative;
+  top: 7px;
+}
+
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  text-align: left;
+}
+
+header .column-container {
+  padding-top: 140px;
+}
+
+.item {
+  flex: 1 0 48%;
+}
+
+.item div {
+  margin-bottom: 15px;
+}
+
+.video-block {
+  position: relative;
+  height: 405px;
+}
+
+.video {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  z-index: 1;
+}
+
+.video-section h2 {
+  margin-top: 7px;
+}
+
+#navigation {
+  background-color: var(--main-dark);
+  position: relative;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.container-nav {
+  display: flex;
+  gap: 20px 30px;
+  flex-wrap: wrap;
+  padding-top: 200px;
+}
+
+.item-nav {
+  flex: 1 1 27%;
+}
+
+h2.item-nav {
+  text-align: left;
+  font-size: 52px;
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+
+a.item-nav {
+  background-color: var(--light);
+  text-align: left;
+
+  padding-top: 30px;
+  padding-bottom: 24px;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+a.item-nav:hover {
+  background-color: var(--main-light);
+  color: var(--white);
+}
+
+a.item-nav > * {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.number {
+  padding-bottom: 40px;
+  font-size: 64px;
+  font-family: Neuch, sans-serif;
+  line-height: 1;
+}
+
+.form-section h3 {
+  padding-left: 55px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+a.item-nav h3 {
+  color: var(--main-light);
+  margin: -3px 0 10px;
+}
+
+a.item-nav:hover h3 {
+  color: var(--white);
+}
+
+.item-nav p {
+  margin: 0;
+}
+
+.description-box h4 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.bg-light .description-box h4 {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.bg-dark .description-box h4 {
+  background-color: var(--white);
+  color: var(--brown);
+}
+
+.description-box img {
+  vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.left-side {
+  float: left;
+}
+
+.right-side {
+  float: right;
+}
+
+.bg-dark .right-side {
+  text-align: right;
+}
+
+.description-box {
+  text-align: left;
+}
+
+.width55 {
+  width: 55%;
+}
+
+.width45 {
+  width: 45%;
+}
+
+.clear {
+  clear: both;
+}
+
+.heading {
+  font-size: 24px;
+  color: var(--translucent-dark);
+  font-family: Neucha, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.bg-light .heading {
+  color: var(--translucent-dark);
+}
+
+.bg-dark .heading {
+  color: var(--translucent-white);
+}
+
+.desc {
+  font-size: 34px;
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+.form-section {
+  display: flex;
+  align-items: center;
+  background: var(--main-dark);
+  color: var(--white);
+  text-align: left;
+}
+
+.form-section div {
+  flex: 1 1 50%;
+}
+
+.form-section p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.3;
+}
+
+form {
+  padding: 15px;
+  margin-top: 3px;
+}
+
+.form-heading {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.terms {
+  font-size: 12px;
+}
+
+input[type="text"] {
+  height: 50px;
+  padding: 0 15px;
+  width: 394px;
+  border: none;
+}
+
+::placeholder {
+  font-size: 12px;
+}
+
+button {
+  background: var(--main-light);
+  color: var(--white);
+  width: 70px;
+  height: 50px;
+  border: none;
+  position: relative;
+  bottom: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+button:hover {
+  background-color: #ea7600;
+}
+
+button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  background-image: url("../images/send.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.footer {
+  padding-top: 60px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #000;
+}
